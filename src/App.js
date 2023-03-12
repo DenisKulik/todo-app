@@ -34,12 +34,15 @@ function App() {
         todos.filter((todo) => !todo.isCompleted)
     );
 
+    const completedTodosCount = todos.filter((todo) => todo.isCompleted).length;
+
     return (
         <div className="App">
             <h1>Todo App</h1>
             <TodoForm addTodo={addTodoHandler}/>
             {todos.length > 0 &&
                 <TodosActions
+                    completedTodosExist={!!completedTodosCount}
                     resetTodos={resetTodosHandler}
                     deleteCompletedTodos={deleteCompletedTodosHandler}
                 />}
