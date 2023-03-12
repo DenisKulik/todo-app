@@ -1,11 +1,16 @@
 import Button from '../UI/Button';
 import { RiDeleteBin2Line, RiRefreshLine } from 'react-icons/ri';
 
-export default function TodosActions() {
+export default function TodosActions({ resetTodos, deleteCompletedTodos }) {
     return (
         <>
-            <Button title="Reset Todos"><RiRefreshLine/></Button>
-            <Button title="Clear Completed Todos"><RiDeleteBin2Line/></Button>
+            <Button title="Reset Todos" onClick={resetTodos}>
+                <RiRefreshLine/>
+            </Button>
+            <Button title="Clear Completed Todos"
+                    onClick={deleteCompletedTodos}>
+                <RiDeleteBin2Line/>
+            </Button>
         </>
     );
 }
