@@ -12,24 +12,8 @@
 .todoFormContainer input {
     width: 45%;
     height: 30px;
-    font-size: 1.3rem;
-}
-
-.todoFormContainer button {
-    height: 50px;
-    margin-left: 20px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    background-color: beige;
-}
-
-.todoFormContainer button:hover {
-    background-color: rgb(240, 240, 155);
-}
-
-.todoFormContainer input,
-.todoFormContainer button {
     padding: 10px 15px;
+    font-size: 1.3rem;
     border: none;
     border-radius: 5px;
 }
