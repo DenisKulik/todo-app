@@ -4,6 +4,14 @@
 
 [Demo](https://deniskulik.github.io/todo-app/)
 
+## Description
+
+A simple todo list app built with React.
+
+## Screenshots
+
+![screenshots](./screenshots/todo-app.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
